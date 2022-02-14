@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow generator - a easy way fo lazy peoples</title>
+    <!--estilo css-->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    
+    <div class="box_div">
+        <input type="color" value="#0000ff" class="color_picker">
+        <input type="color" id="color_picker2" oninput="boxshadow()">
+
+        <div class="output_div"></div>
+
+        <div class="slider_div">
+            <input type="range" value="10" min="0" max="200" id="horizontal" oninput="boxsahado()">
+             <label id="h">H</label>
+            <input type="range" id="vertical" oninput="boxshadow()" value="10">
+             <label id="v">V</label>
+            <input type="range" value="10" id="blur" oninput="boxshadow()">
+             <label id="blur">Blur</label>
+            <input type="range" id="spread" value="10" oninput="boxshadow()" >
+             <label>Spread</label>
+        </div>
+
+        <input type="checkbox" id="inset" oninput="boxshadow()">
+        <div class="css">
+            <p>box-shadow:0px 0px 19px 0px #000000</p>
+        </div> 
+
+        
+    </div>
+
+
+
+
+</body>
+</html>
